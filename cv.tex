@@ -1,0 +1,199 @@
+\documentclass[11pt]{spidercv}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TOP BAR
+%----------------------------------------------------------------------------------------
+\begin{TopBar}{\ColorTextSide}
+    \Name{\ColorHighlight}{Marcos Antônio}{Desenvolvedor Backend}{19 anos}
+
+    %%% Contact
+    \TextSeparator{\ColorHighlight}{Contato}
+    \begin{DoubleColumns}
+        \begin{ItemList}{\ColorHighlight}
+            \item [\Large\faAt] \href{mailto:marcoscardoso.programmer@gmail.com}{marcoscardoso.programmer}
+            \item [\Large\faMapMarker] Paraíba, Brasil
+        \end{ItemList}
+        \nextcolumn
+        \begin{ItemList}{\ColorHighlight}
+            \item [\Large\faGithub] \href{https://github.com/marcoscard}{marcoscard}
+            \item [\Large\faLinkedinSquare] \href{https://www.linkedin.com/in/marcos-ant%C3%B4nio-cardoso-pereira-2b44611b3/}{Marcos Antônio}
+        \end{ItemList}
+    \end{DoubleColumns}
+
+    %%% Interests
+    \TextSeparator{\ColorHighlight}{Interesses}
+    \begin{TripleColumns}
+        \begin{ItemList}{\ColorHighlight}
+            \item [] História e Literatura
+        \end{ItemList}
+        \nextcolumn
+        \begin{ItemList}{\ColorHighlight}
+            \item [] Matemática e Lógica
+        \end{ItemList}
+        \nextcolumn
+        \begin{ItemList}{\ColorHighlight}
+            \item [] Computação
+        \end{ItemList}
+    \end{TripleColumns}
+\end{TopBar}
+
+
+
+%----------------------------------------------------------------------------------------
+%	SIDE BAR
+%----------------------------------------------------------------------------------------
+\begin{SideBar}{\ColorBackground}{\ColorTextSide}
+
+
+    %%% Soft skills
+    %\TextSeparatorBis{\ColorHighlight}{\faUser}{Soft skills}
+
+    %\Label{\ColorHighlight}{Resiliente}
+    %\Label{\ColorHighlight}{Skill 2}
+    %\Label{\ColorHighlight}{Skill 3}
+    %\Label{\ColorHighlight}{Skill 4}
+    %\Label{\ColorHighlight}{Skill 5}
+
+    %\vspace*{1cm}
+
+    %%% Hard skills
+
+    \TextSeparatorBis{\ColorHighlight}{\faGears}{Hard skills}
+    \begin{ItemList}{\ColorHighlight}
+        \item [\faCode] NodeJS, C\#, Python, SQL
+        \item [\faFileCodeO]  Express, Django, Postgres
+        \item [\faCubes]  Docker
+        \item [\faPencilSquareO]  Git, Github
+        %\item [\faVideoCamera]  skill, skill, skill, skill
+        %\item [\faGear]  skill, skill, skill, skill
+    \end{ItemList}
+
+    \vspace*{1cm}
+
+    %%% Spider
+    \TextSeparatorBis{\ColorHighlight}{\faTerminal}{Skills}
+
+    \begin{SpiderDiagram}{\ColorTextSide}{\ColorHighlight}
+        \addSkill{Python}{4}
+        \addSkill{Django}{3}
+        \addSkill{NodeJS}{4}
+        \addSkill{Express}{3}
+        \addSkill{C\#}{1}
+        \addSkill{Docker}{2}
+    \end{SpiderDiagram}
+
+    \vspace*{1cm}
+
+    %%% Languages
+    \TextSeparatorBis{\ColorHighlight}{\faLanguage}{Idiomas}
+
+    \begin{SkillGauges}{\ColorHighlight}
+        \addGauge{English}{5}
+        \addGauge{Libras}{1}
+        %\addGauge{Spanish}{1}
+    \end{SkillGauges}
+\end{SideBar}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Picture
+%----------------------------------------------------------------------------------------
+\DefineProfile{\ColorOther}{\ColorTextSide}{img/perfil.jpg}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Main
+%----------------------------------------------------------------------------------------
+\begin{MainPart}
+
+    %%% Experiences 
+    \MainTitleBis{\ColorHighlight}{\ColorTextMain}{Experiências}{\faSuitcase}
+    \Experience
+    {\ColorHighlight}
+    {Olimpíada do Conhecimento}
+    {Instituto SENAI}
+    %{2015-\faUndo}
+    {2019}
+    {
+        Evento proporcionado pelo SENAI a \textbf{nível nacional}.\\
+        Me permitiu ter
+        contato com pessoas de diferentes estados, além de projetos que são desenvolvidos em todo
+        o Brasil envolvendo áreas como impressão 3D, robótica, sistemas
+        distribuídos, construção civil, etc.
+    }
+    \Experience
+    {\ColorHighlight}
+    {Robótica - Desenvolvedor}
+    {SESI}
+    {2018-2020}
+    {
+        Fiz parte de uma equipe de robótica se envolvendo em competições
+        como a First Lego League e Olimpíada
+        Brasileira de Robótica e campanhas em conjunto com a STTP-PB, nas
+        quais aprendi a trabalhar em equipe com responsabilidade nos
+        projetos do desenvolvimento do robô, assim como iniciação científica.
+    }
+
+
+
+    %%% Education
+    \MainTitleBis{\ColorHighlight}{\ColorTextMain}{Educação}{\faGraduationCap}
+
+    \Experience
+    {\ColorHighlight}
+    {Computer Science}
+    {UFCG - Federal University of Campina Grande}
+    {2022-\faUndo}
+    {
+        Começando na universidade de Ciência da Computação, primeiro período.
+    }
+
+    \Experience
+    {\ColorHighlight}
+    {Jogos Digitais}
+    {Instituto Senai}
+    {2019-2020}
+    {
+        Aprendi sobre Metodologia SCRUM e tecnologias como C\# com Unity2D e
+        3D e Javascript com Construct 3.
+    }
+
+    % \Experience
+    % {\ColorHighlight}
+    % {EZ degree}
+    % {Nice university}
+    % {1901}
+    % {
+        
+    % }
+
+
+    %%% Activities
+    \MainTitleBis{\ColorHighlight}{\ColorTextMain}{Atividades}{\faUsers}
+    \vspace*{0.5cm}
+    \begin{DoubleColumns}
+        \begin{ItemList}{\ColorHighlight}
+            \item [] \href{https://github.com/marcoscard/DCPU-16-web}{Emulador DCPU-16}  
+            \item [] \href{https://github.com/marcoscard/api_rest}{API REST}
+        \end{ItemList}
+        \nextcolumn
+        \begin{ItemList}{\ColorHighlight}
+            \item [] \href{https://github.com/marcoscard/RSS-Article}{Extensão RSS para Gnome}
+            \item [] \href{https://github.com/marcoscard/CalculadoraApp}{Calculadora}
+        \end{ItemList}
+    \end{DoubleColumns}
+
+\end{MainPart}
+
+
+
+\end{document}
